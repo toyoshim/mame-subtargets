@@ -1,0 +1,1 @@
+- make SUBTARGET=toaplan2 to build only titles provided by toaplan2.cpp
