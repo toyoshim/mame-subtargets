@@ -12,6 +12,8 @@
 -- drivers referenced in tiny.lst.
 --------------------------------------------------
 
+CPUS["M37710"] = true
+CPUS["M6502"] = true
 CPUS["M680X0"] = true
 
 --------------------------------------------------
@@ -20,6 +22,8 @@ CPUS["M680X0"] = true
 --------------------------------------------------
 
 SOUNDS["SPEAKER"] = true
+SOUNDS["C140"] = true
+SOUNDS["C352"] = true
 
 --------------------------------------------------
 -- specify available video cores
@@ -28,6 +32,8 @@ SOUNDS["SPEAKER"] = true
 --------------------------------------------------
 -- specify available machine cores
 --------------------------------------------------
+
+MACHINES["EEPROMDEV"] = true
 
 --------------------------------------------------
 -- specify available bus cores
@@ -60,6 +66,16 @@ function createProjects_mame_namconb1(_target, _subtarget)
 
 	files {
 		MAME_DIR .. "src/mame/drivers/namconb1.cpp",
+		MAME_DIR .. "src/mame/drivers/namcos2.cpp",
+		MAME_DIR .. "src/mame/machine/namcomcu.cpp",
+		MAME_DIR .. "src/mame/machine/namcos2.cpp",
+		MAME_DIR .. "src/mame/machine/namcoic.cpp",
+		MAME_DIR .. "src/mame/machine/namco_c148.cpp",
+		MAME_DIR .. "src/mame/machine/namco_c139.cpp",
+		MAME_DIR .. "src/mame/video/namconb1.cpp",
+		MAME_DIR .. "src/mame/video/namcos2.cpp",
+		MAME_DIR .. "src/mame/video/namco_c116.cpp",
+
 	}
 end
 
