@@ -68,11 +68,11 @@ function createProjects_mame_shangha3(_target, _subtarget)
 		GEN_DIR  .. "mame/layout",
 	}
 
-files{
-	MAME_DIR .. "src/mame/drivers/shangha3.cpp",
-	MAME_DIR .. "src/mame/includes/shangha3.h",
-	MAME_DIR .. "src/mame/video/shangha3.cpp",
-}
+	files {
+		MAME_DIR .. "src/mame/drivers/shangha3.cpp",
+		MAME_DIR .. "src/mame/includes/shangha3.h",
+		MAME_DIR .. "src/mame/video/shangha3.cpp",
+	}
 end
 
 function linkProjects_mame_shangha3(_target, _subtarget)

@@ -74,15 +74,15 @@ function createProjects_mame_toaplan2(_target, _subtarget)
 		GEN_DIR  .. "mame/layout",
 	}
 
-files{
-	MAME_DIR .. "src/mame/drivers/toaplan2.cpp",
-	MAME_DIR .. "src/mame/includes/toaplan2.h",
-	MAME_DIR .. "src/mame/video/toaplan2.cpp",
-	MAME_DIR .. "src/mame/video/gp9001.cpp",
-	MAME_DIR .. "src/mame/video/gp9001.h",
-	MAME_DIR .. "src/mame/machine/nmk112.cpp",
-	MAME_DIR .. "src/mame/machine/nmk112.h",
-}
+	files {
+		MAME_DIR .. "src/mame/drivers/toaplan2.cpp",
+		MAME_DIR .. "src/mame/includes/toaplan2.h",
+		MAME_DIR .. "src/mame/video/toaplan2.cpp",
+		MAME_DIR .. "src/mame/video/gp9001.cpp",
+		MAME_DIR .. "src/mame/video/gp9001.h",
+		MAME_DIR .. "src/mame/machine/nmk112.cpp",
+		MAME_DIR .. "src/mame/machine/nmk112.h",
+	}
 end
 
 function linkProjects_mame_toaplan2(_target, _subtarget)

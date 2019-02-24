@@ -31,8 +31,6 @@ SOUNDS["YM2413"] = true
 -- specify available video cores
 --------------------------------------------------
 
--- VIDEOS["BUFSPRITE"] = true
-
 --------------------------------------------------
 -- specify available machine cores
 --------------------------------------------------
@@ -71,16 +69,16 @@ function createProjects_mame_segas16b(_target, _subtarget)
 		GEN_DIR  .. "mame/layout",
 	}
 
-files{
-	MAME_DIR .. "src/mame/drivers/segas16b.cpp",
-	MAME_DIR .. "src/mame/machine/fd1089.cpp",
-	MAME_DIR .. "src/mame/machine/fd1094.cpp",
-	MAME_DIR .. "src/mame/machine/mc8123.cpp",
-	MAME_DIR .. "src/mame/machine/segaic16.cpp",
-	MAME_DIR .. "src/mame/video/sega16sp.cpp",
-	MAME_DIR .. "src/mame/video/segas16b.cpp",
-	MAME_DIR .. "src/mame/video/segaic16.cpp",
-}
+	files {
+		MAME_DIR .. "src/mame/drivers/segas16b.cpp",
+		MAME_DIR .. "src/mame/machine/fd1089.cpp",
+		MAME_DIR .. "src/mame/machine/fd1094.cpp",
+		MAME_DIR .. "src/mame/machine/mc8123.cpp",
+		MAME_DIR .. "src/mame/machine/segaic16.cpp",
+		MAME_DIR .. "src/mame/video/sega16sp.cpp",
+		MAME_DIR .. "src/mame/video/segas16b.cpp",
+		MAME_DIR .. "src/mame/video/segaic16.cpp",
+	}
 end
 
 function linkProjects_mame_segas16b(_target, _subtarget)
