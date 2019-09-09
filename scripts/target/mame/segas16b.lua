@@ -21,9 +21,11 @@ CPUS["Z80"] = true
 -- drivers referenced in tiny.lst.
 --------------------------------------------------
 
+SOUNDS["DAC"] = true
 SOUNDS["OKIM6295"] = true
 SOUNDS["SPEAKER"] = true
 SOUNDS["UPD7759"] = true
+SOUNDS["VOLT_REG"] = true
 SOUNDS["YM2151"] = true
 SOUNDS["YM2413"] = true
 
