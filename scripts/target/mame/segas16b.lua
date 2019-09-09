@@ -13,6 +13,7 @@
 --------------------------------------------------
 
 CPUS["M680X0"] = true
+CPUS["MCS48"] = true
 CPUS["MCS51"] = true
 CPUS["Z80"] = true
 
@@ -39,7 +40,10 @@ SOUNDS["YM2413"] = true
 
 MACHINES["CXD1095"] = true
 MACHINES["GEN_LATCH"] = true
+MACHINES["I8243"] = true
+MACHINES["I8255"] = true
 MACHINES["UPD4701"] = true
+MACHINES["WATCHDOG"] = true
 MACHINES["Z80DAISY"] = true
 
 --------------------------------------------------
@@ -72,12 +76,18 @@ function createProjects_mame_segas16b(_target, _subtarget)
 	}
 
 	files {
+		MAME_DIR .. "src/mame/audio/segag80r.cpp",
+		MAME_DIR .. "src/mame/audio/segag80r.h",
+		MAME_DIR .. "src/mame/drivers/segas16a.cpp",
 		MAME_DIR .. "src/mame/drivers/segas16b.cpp",
 		MAME_DIR .. "src/mame/machine/fd1089.cpp",
 		MAME_DIR .. "src/mame/machine/fd1094.cpp",
 		MAME_DIR .. "src/mame/machine/mc8123.cpp",
+		MAME_DIR .. "src/mame/machine/segacrp2_device.cpp",
+		MAME_DIR .. "src/mame/machine/segacrp2_device.h",
 		MAME_DIR .. "src/mame/machine/segaic16.cpp",
 		MAME_DIR .. "src/mame/video/sega16sp.cpp",
+		MAME_DIR .. "src/mame/video/segas16a.cpp",
 		MAME_DIR .. "src/mame/video/segas16b.cpp",
 		MAME_DIR .. "src/mame/video/segaic16.cpp",
 	}
